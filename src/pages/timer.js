@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [time, setTime] = useState(null);
 
   useEffect(() => {
     const fetchTime = async () => {
-      const response = await fetch('/api/timer');
+      const response = await fetch("/api/timer");
       const data = await response.json();
       setTime(data.currentTime);
     };
@@ -18,17 +18,20 @@ export default function Home() {
 
   return (
     <div>
-           <main className="container">
+      <main className="container">
         <section className="hero">
-                <h1>Server-Side Timer</h1>
-            {time ? <p>Current Server Time: {new Date(time).toLocaleTimeString()}</p> : <p>Loading...</p>}
+          <h1>Server-Side Timer</h1>
+          {time ? (
+            <p>Current Server Time: {new Date(time).toLocaleTimeString()}</p>
+          ) : (
+            <p>Loading...</p>
+          )}
         </section>
         <section>
-            <h1>What is this page?</h1>
-            <p>This is a testing page to make sure the API is setup properly.</p>
+          <h1>What is this page?</h1>
+          <p>This is a testing page to make sure the API is setup properly.</p>
         </section>
-        </main>
-
+      </main>
     </div>
   );
 }
