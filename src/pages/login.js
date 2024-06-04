@@ -17,9 +17,11 @@ export default function Login() {
       <Head>
         <title>Login</title>
       </Head>
-      <header>
-          {/* <Nav /> */}
-      </header>
+          {/* 
+          <header>
+            <Nav />
+          </header>
+          */}
       <div className="login-container">
         <form className="login-form" onSubmit={handleLogin}>
           <h2>Login</h2>
