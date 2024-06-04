@@ -245,7 +245,6 @@ nav ul li a:hover {
   background-color: #0053b3;
 }
 
-/* Player Card */
 .player-card {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -311,6 +310,69 @@ nav ul li a:hover {
 .leaderboard-add button:hover {
   background-color: #0053b3;
 }
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  color: white;
+}
+
+.login-form {
+  width: 30%;
+  padding: 20px;
+  background-color: #363636;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.login-form h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.login-form label {
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button.login-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #00aeff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.login-button:hover {
+  background-color: #007acc;
+}
+
 
 @media (max-width: 768px) {
   nav ul {
