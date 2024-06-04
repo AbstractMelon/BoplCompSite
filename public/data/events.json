@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Event1",
+    "date": "2024-06-15",
+    "description": "Event 1 description."
+  },
+  {
+    "title": "Event2",
+    "date": "2024-06-20",
+    "description": "Event 2 description."
+  }
+]

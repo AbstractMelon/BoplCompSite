@@ -1,0 +1,36 @@
+{
+  "name": "boplcompsite",
+  "version": "1.0.0",
+  "description": "The site at https://competitive.boplbattle.net",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "vercel": "vercel",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "next": "latest",
+    "prettier": "^3.3.0",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-next": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbstractMelon/BoplCompSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbstractMelon/BoplCompSite/issues"
+  },
+  "homepage": "https://github.com/AbstractMelon/BoplCompSite#readme"
+}

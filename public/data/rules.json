@@ -1,0 +1,41 @@
+{
+  "generalRules": [
+    "Be respectful - You must respect all users, regardless of your liking towards them. Treat others the way you want to be treated.",
+    "No Inappropriate Language - The use of profanity should be kept to a minimum. However, any derogatory language towards any user is prohibited.",
+    "No spamming - Don't send a lot of small messages right after each other. Do not disrupt chat by spamming.",
+    "No pornographic/adult/other NSFW material - This is a community server and not meant to share this kind of material.",
+    "No advertisements - We do not tolerate any kind of advertisements, whether it be for other communities or streams. You can post your content in the media channel if it is relevant and provides actual value (Video/Art)",
+    "No offensive names and profile pictures - You will be asked to change your name or picture if the staff deems them inappropriate.",
+    "Server Raiding - Raiding or mentions of raiding are not allowed.",
+    "Direct & Indirect Threats - Threats to other users of DDoS, Death, DoX, abuse, and other malicious threats are absolutely prohibited and disallowed.",
+    "Follow the Discord Community Guidelines - You can find them here: https://discordapp.com/guidelines",
+    "Do not join voice chat channels without permission of the people already in there - If you see that they have a free spot it is alright to join and ask whether they have an open spot, but leave if your presence is not wanted by whoever was there first.",
+    "The owners and Mods will Mute/Kick/Ban per discretion. If you feel mistreated DM an Owner and we will resolve the issue.",
+    "All Channels will have pinned messages explaining what they are there for and how everything works. If you don't understand something, feel free to ask!",
+    "Your presence in this server implies accepting these rules, including all further changes. These changes might be done at any time without notice, it is your responsibility to check for them."
+  ],
+  "competitiveRules": {
+    "title": "Bopl Battle Competitive Rules",
+    "description": "As of right now no version of modding is allowed during a competitive ranked match. (Even sudden death and time stop count down is considered unfair advantage)",
+    "notes": [
+      "Please read <#1190680303862304798> and <#1147861412635484211> before starting your first match.",
+      "MAKE SURE THAT \"HIDE\" IS SET TO NOTHING. This is for screenshot purposes."
+    ],
+    "gameplay": {
+      "winConditions": "G2 Win Conditions: First to 10, must have at least a 2 point lead (8-10, 10-12, etc).",
+      "technical": [
+        "Screenshot the results of your game in case your opponent lies about the results in ⁠report-lies."
+      ],
+      "desync": "T1 Desync: If there is a desync (One player sees 1 scenario while the other player sees something completely different), since desyncs are often not noticed very quickly due to the nature of them, the match restarts from the last round that wasn't affected by it.",
+      "lobbyReset": "T2 Accidental lobby reset (ability screen) condition: Make sure to save the screenshot of the game before someone resets the lobby on accident, and the screenshot of the 2nd game when it finishes. Example: Game reset at 6-6. Both teams only need 4 points to win, next game you play until someone reaches 4 (assuming we don't have a 9-9 scenario).",
+      "samePlayerMatchup": "T3 Same player matchup rule: You can't play against the same player more than 3 times in a row without you or the other player playing someone else first. Any match finished after the 3rd match will be cancelled. (points reverted, no winner or loser)",
+      "queueRules": "T4 Queue rules: If you queue up, and a match starts with you in it, not responding within 10 minutes of match start is an automatic loss. You cannot purposefully avoid playing a player that you queued up with, unless both players agree to cancel the match (high ping or to avoid T3 rule).",
+      "loadoutRules": [
+        "G1 Loadout rules:",
+        "❌ Using glitch loadouts is not allowed.",
+        "❌ Using 3 of the same ability is not allowed in both 1v1 and 2v2.",
+        "⚠️ If you double stack, you should have 1 of them in the MIDDLE slot, to not pick up all 3 same abilities."
+      ]
+    }
+  }
+}
