@@ -9,12 +9,12 @@ body {
   line-height: 1.6;
   background: url("/images/background.png") no-repeat center center fixed;
   background-size: cover;
-  background-color: #fdd835;
+  background-color: #00aeff;
 }
 
 .container {
   max-width: 1100px;
-  margin: 0px auto;
+  margin: 50px auto;
   padding: 20px;
   background-color: #00b0ff;
   border-radius: 10px;
