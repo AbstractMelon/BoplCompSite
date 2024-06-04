@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 
+import {Nav} from '/src/components/nav.js'
+
 export default function Home() {
   return (
     <div>
@@ -8,25 +10,7 @@ export default function Home() {
         <title>Bopl Battle Competitive</title>
       </Head>
       <header>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/leaderboard">Leaderboard</Link>
-            </li>
-            <li>
-              <Link href="/events">Events</Link>
-            </li>
-            <li>
-              <Link href="/announcements">Announcements</Link>
-            </li>
-            <li>
-              <Link href="/combos">Combos</Link>
-            </li>
-            <li>
-              <Link href="/rules">Rules</Link>
-            </li>
-          </ul>
-        </nav>
+        <Nav />
       </header>
       <main className="container">
         <section className="hero">
