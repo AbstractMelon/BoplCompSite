@@ -1,7 +1,6 @@
 import React from 'react';
+import  {getAdminHashes} from '/utils/hash.js'
 import { parseCookies } from '/utils/cookies';
-import * as testUtils from '/utils/test'
-
 
 const ProtectedPage = () => {
   return (
@@ -15,8 +14,10 @@ const ProtectedPage = () => {
 export async function getServerSideProps(context) {
   const cookies = parseCookies(context.req);
   const token = cookies.token;
+  console.log(cookies)
 
-  if (token !== '2839') {
+
+  if (!Object.values(getAdminHashes()).includes(token)) {
     return {
       redirect: {
         destination: '/login', 

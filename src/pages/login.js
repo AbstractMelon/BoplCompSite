@@ -2,14 +2,44 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import {Nav} from '/src/components/nav.js'
+import * as process from 'process'
+import  {getAdminHashes} from '/utils/hash.js'
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = (e) => {
+  function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+  const handleLogin = async(e) => {
     e.preventDefault();
-    alert(`Logging in with username: ${username} and password: ${password}`);
+    let d = await fetch("/api/login", {
+      method: "post",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+
+      //make sure to serialize your JSON body
+      body: JSON.stringify({
+        username,
+        password
+      })
+    })
+    d = await d.json()
+    if(d.error){
+      alert(d.error)
+      return
+    }
+    setCookie("token",d.data,3)
+    location.assign("/dashboard")
   };
 
   return (
