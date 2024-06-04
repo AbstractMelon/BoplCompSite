@@ -18,8 +18,17 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Server-Side Timer</h1>
-      {time ? <p>Current Server Time: {new Date(time).toLocaleTimeString()}</p> : <p>Loading...</p>}
+           <main className="container">
+        <section className="hero">
+                <h1>Server-Side Timer</h1>
+            {time ? <p>Current Server Time: {new Date(time).toLocaleTimeString()}</p> : <p>Loading...</p>}
+        </section>
+        <section>
+            <h1>What is this page?</h1>
+            <p>This is a testing page to make sure the API is setup properly.</p>
+        </section>
+        </main>
+
     </div>
   );
 }
