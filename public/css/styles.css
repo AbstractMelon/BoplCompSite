@@ -189,6 +189,8 @@ nav ul li a:hover {
   margin-top: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height:50vh;
+  overflow-y: auto;
 }
 
 .announcements h2 {
@@ -395,6 +397,7 @@ button.login-button:hover {
 .dashboard{
   display:flex;
   background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
   width:80vw;
   height:80vh;
 
@@ -410,7 +413,8 @@ button.login-button:hover {
 } */
 
 .makeContainer{
-  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255,255,255,0.5);
   border-radius: 20px;
   margin:10px;
   padding:20px;
