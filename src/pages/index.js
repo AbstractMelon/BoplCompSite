@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import {Nav} from '/src/components/nav.js'
+import {AnnouncementsComp} from '/src/components/announcements.js'
 
 export default function Home() {
   return (
@@ -50,11 +51,7 @@ export default function Home() {
 
         <section className="announcements">
           <h2>Announcements</h2>
-          <ul>
-            <li>Announcement 1</li>
-            <li>Announcement 2</li>
-            <li>Announcement 3</li>
-          </ul>
+          <AnnouncementsComp />
         </section>
 
         <section className="events">

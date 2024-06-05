@@ -1,12 +1,14 @@
 import React from 'react';
+import Button from '@mui/material/Button';
+
 import  {getAdminHashes} from '/utils/hash.js'
 import { parseCookies } from '/utils/cookies';
 
+
 const ProtectedPage = () => {
   return (
-    <div>
-      <h1>Protected Page (real)</h1>
-      <p>This page can only be accessed if you have the correct token cookie.</p>
+    <div className='dashboard'>
+      
     </div>
   );
 };
