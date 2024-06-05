@@ -1,3 +1,10 @@
+input, select {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  -webkit-background-clip: text !important;
+  background-clip:  text !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -348,14 +355,14 @@ label {
   color: #333;
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="password"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-}
+} */
 
 button.login-button {
   display: block;

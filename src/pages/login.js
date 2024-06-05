@@ -4,6 +4,8 @@ import Link from "next/link";
 import {Nav} from '/src/components/nav.js'
 import * as process from 'process'
 import  {getAdminHashes} from '/utils/hash.js'
+import TextField from '@mui/material/TextField';
+
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -56,23 +58,27 @@ export default function Login() {
         <form className="login-form" onSubmit={handleLogin}>
           <h2>Login</h2>
           <div className="form-group">
-            <label htmlFor="username">Username:</label>
-            <input
+          <TextField
+              label="Username"
               type="text"
-              id="username"
+              variant="outlined"
+              required
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              required
+              sx={{width:"100%"}}
             />
+            
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password:</label>
-            <input
+            <TextField
+              label="Password"
               type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              autoComplete="current-password"
+              variant="outlined"
               required
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+              sx={{width:"100%"}}
             />
           </div>
           <button type="submit" className="login-button">Login</button>
