@@ -15,7 +15,14 @@ const ProtectedPage = () => {
     <div className='dashboard'>
         <div className='makeContainer' style={{height:"400px",width:"100%"}}>
           <h1 style={{color:"#fff"}}>Create New Announcement/Event</h1>
-          <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+          <TextField
+              label="Title"
+              type="text"
+              variant="standard"
+              required
+              // value={username}
+              sx={{width:"100%"}}
+            />
           <br></br>
           <Button variant="contained" endIcon={<SendIcon />} sx={{backgroundColor:"#2f2f31",margin:"10px"}}>Publish Announcement</Button>
           <Button variant="contained" endIcon={<SendIcon />} sx={{backgroundColor:"#2f2f31",margin:"10px"}}>Publish Event</Button>

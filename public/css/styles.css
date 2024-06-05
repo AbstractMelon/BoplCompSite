@@ -405,9 +405,9 @@ button.login-button:hover {
 
   overflow-y:auto;
 }
-.dashboard>*{
+/* .dashboard>*{
   color:white;
-}
+} */
 
 .makeContainer{
   background-color: rgba(0,0,0,0.2);
@@ -415,6 +415,6 @@ button.login-button:hover {
   margin:10px;
   padding:20px;
 }
-.whiteColor>*{
+/* .whiteColor>*{
   color:white;
-}
+} */
