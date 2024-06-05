@@ -35,7 +35,6 @@ const ProtectedPage = () => {
 export async function getServerSideProps(context) {
   const cookies = parseCookies(context.req);
   const token = cookies.token;
-  console.log(cookies)
 
 
   if (!Object.values(getAdminHashes()).includes(token)) {
