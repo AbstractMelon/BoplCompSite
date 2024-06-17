@@ -12,10 +12,10 @@ export function Nav() {
           <Link href="/leaderboard">Leaderboard</Link>
         </li>
         <li>
-          <Link href="/events">Events</Link>
+          <Link href="/announcements">Announcements</Link>
         </li>
         <li>
-          <Link href="/announcements">Announcements</Link>
+          <Link href="/events">Events</Link>
         </li>
         <li>
           <Link href="/rules">Rules</Link>

@@ -1,10 +1,20 @@
 import { AnnouncementsComp } from "/src/components/announcements.js";
 import { Nav } from "/src/components/nav.js";
+import Head from "next/head";
+
 export default function Announcements() {
   return (
-    <div className="container">
-      <h1>Announcements</h1>
-      <AnnouncementsComp />
+    <div>
+      <Head>
+        <title>Bopl Battle Competitive - Annoucements</title>
+      </Head>
+      <header>
+        <Nav />
+      </header>
+      <div className="container">
+        <h1>Announcements</h1>
+        <AnnouncementsComp />
+      </div>
     </div>
   );
 }
