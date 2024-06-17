@@ -1,24 +1,22 @@
-import { useEffect, useState } from "react";
+import { AnnouncementsComp } from "/src/components/announcements.js";
+import { Nav } from "/src/components/nav.js";
+import Head from "next/head";
 
 export default function Announcements() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("/src/data/announcements.json")
-      .then((response) => response.json())
-      .then((data) => setData(data));
-  }, []);
-
   return (
     <div>
-      <h1>Announcements</h1>
-      <ul>
-        {data.map((announcement) => (
-          <li key={announcement.title}>
-            {announcement.date}: {announcement.title} - {announcement.content}
-          </li>
-        ))}
-      </ul>
+      <Head>
+        <title>Bopl Battle Competitive - Annoucements</title>
+      </Head>
+      <header>
+        <Nav />
+      </header>
+      <div className="announcements-cards">
+        <div className="container">
+          <h1>Announcements</h1>
+          <AnnouncementsComp />
+        </div>
+      </div>
     </div>
   );
 }
