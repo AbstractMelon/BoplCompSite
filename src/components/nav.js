@@ -20,6 +20,9 @@ export function Nav() {
         <li>
           <Link href="/rules">Rules</Link>
         </li>
+        <li>
+          <Link href="/discord">Discord</Link>
+        </li>
       </ul>
     </nav>
   );

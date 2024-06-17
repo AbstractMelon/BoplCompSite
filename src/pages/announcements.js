@@ -11,9 +11,11 @@ export default function Announcements() {
       <header>
         <Nav />
       </header>
-      <div className="container">
-        <h1>Announcements</h1>
-        <AnnouncementsComp />
+      <div className="announcements-cards">
+        <div className="container">
+          <h1>Announcements</h1>
+          <AnnouncementsComp />
+        </div>
       </div>
     </div>
   );

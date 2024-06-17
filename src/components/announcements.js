@@ -1,27 +1,29 @@
-import { useEffect, useState, useId } from "react";
+import { useEffect, useState } from "react";
 
 export function AnnouncementsComp() {
-  const divId = useId();
+  const [announcements, setAnnouncements] = useState([]);
 
-  // ? For better performance on client-side, the HTML is generated and stored in a cache on the server-side.
   useEffect(() => {
-    fetch("/api/announcements")
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById(divId).innerHTML = data;
-      });
+    fetch("/data/announcements.json")
+      .then((response) => response.json())
+      .then((data) => setAnnouncements(data));
   }, []);
 
-  return <div id={divId}></div>;
-  // return (
-  //   <div>
-  //     <ul>
-  //       {data.map((announcement) => (
-  //         <li key={announcement.title}>
-  //           {announcement.date}: {announcement.title} - {announcement.content}
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   </div>
-  // );
+  return (
+    <div>
+      <ol>
+        {announcements.map((announcement, index) => (
+          <div key={index} class="announcement-card-list" onClick={() => handleCardClick(announcement)}>
+            <h2>{announcement.title} - {announcement.converted_date}</h2>
+            <p>{announcement.content}</p>
+          </div>
+        ))}
+      </ol>
+    </div>
+  );
+}
+
+
+function handleCardClick(announcement) {
+  alert(`Title: ${announcement.title}\nDate: ${announcement.date}\nContent: ${announcement.content}`);
 }
