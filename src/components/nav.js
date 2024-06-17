@@ -15,9 +15,6 @@ export function Nav(){
             <Link href="/announcements">Announcements</Link>
           </li>
           <li>
-            <Link href="/combos">Combos</Link>
-          </li>
-          <li>
             <Link href="/rules">Rules</Link>
           </li>
         </ul>

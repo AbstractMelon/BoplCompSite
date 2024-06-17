@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Main";
+  src: url("/fonts/archrivalbold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Secondary";
+  src: url("/fonts/archrival.ttf") format("truetype");
+}
+
 input, select {
   color: #fff !important;
   -webkit-text-fill-color: #fff !important;
@@ -12,18 +21,20 @@ input, select {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Main", "Secondary";
   line-height: 1.6;
   background: url("/images/background.png") no-repeat center center fixed;
   background-size: cover;
-  background-color: #00aeff;
+  background-color: #2099ee;
+    border: solid 7px #125988;
 }
 
 .container {
   max-width: 1100px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #00b0ff;
+  background-color: #2099ee;
+  border: solid 7px #125988;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-style: solid;
@@ -62,7 +73,8 @@ a:hover {
 }
 
 header {
-  background-color: #00b0ff;
+  background-color: #2099ee;
+  border: solid 7px #125988;
   border-style: solid;
   padding: 20px 0;
   max-width: 1100px;
@@ -103,10 +115,14 @@ nav ul li a:hover {
 
 .page-header {
   margin-bottom: 40px;
+  background-color: #2099ee;
+  border: solid 7px #125988;
 }
 
 .page-section {
   margin-bottom: 40px;
+  background-color: #2099ee;
+  border: solid 7px #125988;
 }
 
 .page-section h3 {
@@ -128,14 +144,15 @@ nav ul li a:hover {
 .hero {
   text-align: center;
   padding: 20px 20px;
-  background-color: rgba(14, 14, 14, 0.756);
+  background-color: #2099ee;
+  border: solid 7px #125988;
   color: #fff;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -148,7 +165,8 @@ nav ul li a:hover {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #00b0ff;
+  background-color: #2099ee;
+  border: solid 7px #125988;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -166,36 +184,50 @@ nav ul li a:hover {
 }
 
 .feature {
-  background-color: #00bbff;
-  border: 4px solid;
+  color: #ffffff;
+  background-color: #2099ee;
+  border: 4px solid #125988;
+  border-radius: 30px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition:
+      background-color 0.5s,
+      transform 0.5s;
 }
+.feature:hover {
+  background-color: #f89928;
+  border-color: #915924;
+  transform: scale(1.05);
+}
+
 
 .feature h3 {
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .feature p {
   margin-bottom: 0;
-  color: #000;
+  color: #ffffff;
 }
 
 .announcements {
-  background-color: #00bbff;
-  border: 4px solid;
+  background-color: #2099ee;
+  border: 4px solid #125988;
   padding: 20px;
   margin-top: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height:50vh;
   overflow-y: auto;
+  color: #ffffff;
 }
 
 .announcements h2 {
   margin-bottom: 20px;
-  color: #13117e;
+  color: #ffffff;
 }
 
 .announcements ul {
@@ -207,8 +239,9 @@ nav ul li a:hover {
 }
 
 .events {
-  background-color: #00bbff;
-  border: 4px solid;
+  background-color: #2099ee;
+  border: 4px solid #125988;
+  color: #ffffff;
   padding: 20px;
   margin-top: 40px;
   border-radius: 10px;
@@ -217,7 +250,7 @@ nav ul li a:hover {
 
 .events h2 {
   margin-bottom: 20px;
-  color: #13117e;
+  color: #ffffff;
 }
 
 .events ul {
@@ -255,17 +288,24 @@ nav ul li a:hover {
 }
 
 .player-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  color: #ffffff;
+  background-color: #2099ee;
+  border: 4px solid #125988;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
+  transition:
+      background-color 1s,
+      transform 1s;
 }
 
 .player-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f89928;
+  border-color: #915924;
+  transform: scale(1.02);
 }
 
 .player-card h3 {
@@ -331,7 +371,8 @@ nav ul li a:hover {
 .login-form {
   width: 30%;
   padding: 20px;
-  background-color: #363636;
+  background-color: #2099ee;
+  border: 4px solid #125988;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: white;
@@ -370,16 +411,18 @@ button.login-button {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #00aeff;
+  background-color: #f89928;
+  border: 4px solid #915924;
   color: #fff;
-  border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
 }
 
 button.login-button:hover {
   background-color: #007acc;
+  background-color: #c1761b;
+  border: 4px solid #915924;
 }
 
 
@@ -394,31 +437,38 @@ button.login-button:hover {
   }
 }
 
-.dashboard{
-  display:flex;
-  background-color: rgba(0,0,0,0.5);
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
   backdrop-filter: blur(10px);
-  width:80vw;
-  height:80vh;
-
-  margin:auto;
-  margin-top:5vh;
-  padding:20px;
+  margin: 50px 50px;
+  margin-top: 5vh;
+  padding: 5px;
   border-radius: 20px;
-
-  overflow-y:auto;
+  overflow-y: auto;
 }
-/* .dashboard>*{
-  color:white;
-} */
 
-.makeContainer{
+.makeContainer {
   backdrop-filter: blur(10px);
-  background-color: rgba(255,255,255,0.5);
-  border-radius: 20px;
-  margin:10px;
-  padding:20px;
+  background-color: #00b0ff;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
 }
-/* .whiteColor>*{
-  color:white;
-} */
+
+.analyticsContainer {
+  backdrop-filter: blur(10px);
+  background-color: #00b0ff;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.leaderboardContainer {
+  backdrop-filter: blur(10px);
+  background-color: #00b0ff;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
