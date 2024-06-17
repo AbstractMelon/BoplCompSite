@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTrash,
-  faPencilAlt,
-  faPlus,
-} from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faPencilAlt, faPlus } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
 import { Nav } from "/src/components/nav.js";
 
@@ -26,7 +22,7 @@ export default function Leaderboard() {
 
   useEffect(() => {
     const filtered = data.filter((player) =>
-      player.name.toLowerCase().includes(searchTerm.toLowerCase()),
+      player.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredData(filtered);
   }, [data, searchTerm]);
@@ -100,7 +96,9 @@ export default function Leaderboard() {
         <div className="leaderboard">
           {filteredData.map((player, index) => (
             <div key={index} className="player-card">
-              <h3>{player.name}</h3>
+              <h3>
+                #{index + 1} {player.name}
+              </h3>
               <p>Score: {player.score}</p>
               <button onClick={() => handleEdit(index, player)}>
                 {/* <FontAwesomeIcon icon={faPencilAlt} /> */}
