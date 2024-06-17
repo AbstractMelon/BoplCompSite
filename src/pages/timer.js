@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Nav } from "/src/components/nav.js";
 
 export default function Home() {
   const [time, setTime] = useState(null);

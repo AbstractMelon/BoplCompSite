@@ -7,11 +7,12 @@
   src: url("/fonts/archrival.ttf") format("truetype");
 }
 
-input, select {
+input,
+select {
   color: #fff !important;
   -webkit-text-fill-color: #fff !important;
   -webkit-background-clip: text !important;
-  background-clip:  text !important;
+  background-clip: text !important;
 }
 
 * {
@@ -26,7 +27,6 @@ body {
   background: url("/images/background.png") no-repeat center center fixed;
   background-size: cover;
   background-color: #2099ee;
-    border: solid 7px #125988;
 }
 
 .container {
@@ -47,7 +47,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
 }
 
 ul {
@@ -115,30 +115,32 @@ nav ul li a:hover {
 
 .page-header {
   margin-bottom: 40px;
-  background-color: #2099ee;
-  border: solid 7px #125988;
+  color: white;
 }
 
 .page-section {
   margin-bottom: 40px;
-  background-color: #2099ee;
-  border: solid 7px #125988;
+  color: white;
 }
 
 .page-section h3 {
   margin-bottom: 10px;
+  color: white;
 }
 
 .page-section p {
   margin-bottom: 10px;
+  color: white;
 }
 
 .page-section ul {
   margin-bottom: 20px;
+  color: white;
 }
 
 .page-section ul li {
   margin-bottom: 5px;
+  color: white;
 }
 
 .hero {
@@ -193,15 +195,14 @@ nav ul li a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   transition:
-      background-color 0.5s,
-      transform 0.5s;
+    background-color 0.5s,
+    transform 0.5s;
 }
 .feature:hover {
   background-color: #f89928;
   border-color: #915924;
   transform: scale(1.05);
 }
-
 
 .feature h3 {
   margin-bottom: 10px;
@@ -220,7 +221,7 @@ nav ul li a:hover {
   margin-top: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height:50vh;
+  height: 50vh;
   overflow-y: auto;
   color: #ffffff;
 }
@@ -255,10 +256,12 @@ nav ul li a:hover {
 
 .events ul {
   list-style: none;
+  color: #ffffff;
 }
 
 .events ul li {
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .leaderboard {
@@ -297,8 +300,8 @@ nav ul li a:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   transition:
-      background-color 1s,
-      transform 1s;
+    background-color 1s,
+    transform 1s;
 }
 
 .player-card:hover {
@@ -309,11 +312,13 @@ nav ul li a:hover {
 }
 
 .player-card h3 {
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
 .player-card p {
   margin: 0;
+  color: #ffffff;
 }
 
 .player-card button {
@@ -424,7 +429,6 @@ button.login-button:hover {
   background-color: #c1761b;
   border: 4px solid #915924;
 }
-
 
 @media (max-width: 768px) {
   nav ul {

@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import {Nav} from '/src/components/nav.js'
-import {AnnouncementsComp} from '/src/components/announcements.js'
+import { Nav } from "/src/components/nav.js";
+import { AnnouncementsComp } from "/src/components/announcements.js";
 
 export default function Home() {
   return (

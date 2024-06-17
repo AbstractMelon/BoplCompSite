@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Nav } from "/src/components/nav.js";
 
 export default function Events() {
   const [data, setData] = useState([]);
@@ -10,7 +11,7 @@ export default function Events() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h1>Events</h1>
       <ul>
         {data.map((event) => (

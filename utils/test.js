@@ -1,5 +1,5 @@
-let num = Math.random()
+let num = Math.random();
 
 export function getNum() {
-  return num++
+  return num++;
 }

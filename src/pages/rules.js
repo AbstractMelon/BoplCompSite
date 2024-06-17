@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { Nav } from "/src/components/nav.js";
+
 export default function Rules() {
   const [generalRules, setGeneralRules] = useState([]);
   const [competitiveRules, setCompetitiveRules] = useState({});

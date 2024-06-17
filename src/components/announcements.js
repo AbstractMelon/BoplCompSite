@@ -8,14 +8,11 @@ export function AnnouncementsComp() {
     fetch("/api/announcements")
       .then((response) => response.text())
       .then((data) => {
-        document.getElementById(divId).innerHTML = data
+        document.getElementById(divId).innerHTML = data;
       });
   }, []);
 
-
-  return (<div id={divId}>
-
-  </div>)
+  return <div id={divId}></div>;
   // return (
   //   <div>
   //     <ul>

@@ -1,25 +1,25 @@
-let announceCache = ""
-let eventCache = ""
+let announceCache = "";
+let eventCache = "";
 
-generateCache()
-export function getCache(){
-    return [announceCache, eventCache]
+generateCache();
+export function getCache() {
+  return [announceCache, eventCache];
 }
-export function generateCache(){
-    generateEventCache()
-    generateAnnounceCache()
+export function generateCache() {
+  generateEventCache();
+  generateAnnounceCache();
 
-    return getCache()
+  return getCache();
 }
-function generateAnnounceCache(){
-    let html = "aaaa"
+function generateAnnounceCache() {
+  let html = "Placeholder announcement!";
 
-    announceCache = html
-    return html
+  announceCache = html;
+  return html;
 }
-function generateEventCache(){
-    let html = ""
+function generateEventCache() {
+  let html = "";
 
-    eventCache = html
-    return html
+  eventCache = html;
+  return html;
 }
