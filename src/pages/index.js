@@ -17,8 +17,7 @@ export default function Home() {
         <section className="hero">
           <h1>Welcome to the Bopl Battle Competitive site</h1>
           <p>
-            Join the ultimate gaming community where players compete,
-            collaborate, and conquer!
+              Some text goes here for a quick description but idk what to put here!
           </p>
         </section>
 
